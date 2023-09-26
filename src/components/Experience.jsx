@@ -9,7 +9,7 @@ const Experience = () => {
         <div className='container max-w-7xl py-14 mx-auto'>
             <div className='flex justify-center items-center gap-20'>
                 <div className='w-1/2'>
-                    <p className='text-[#008AFF] text-lg font-semibold uppercase'>Why Choose Bestkit?</p>
+                    <p className='text-[#008AFF] text-sm md:text-lg font-semibold uppercase'>Why Choose Bestkit?</p>
                     <h1 className='text-[40px] font-semibold leading-[54px] mb-[58px]'>We Have Lots Of Experience For Boost Your Website Traffic</h1>
                     <div className='font-poppins flex gap-[41px]'>
                         <div className=''>

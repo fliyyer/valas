@@ -8,3 +8,8 @@
   scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
 }
+
+.bg-bluess {
+  background: linear-gradient(258deg, #2EA0F9 1.03%, #1C5EF0 101.45%);
+
+}

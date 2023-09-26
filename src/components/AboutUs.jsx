@@ -13,7 +13,7 @@ const AboutUs = () => {
     return (
         <div className='my-16'>
             <h1 className='text-[#004387] text-2xl text-center font-bold'>READ MORE ABOUT US</h1>
-            <div className='flex flex-col items-center gap-4 mt-6 md:flex-row md:justify-center md:gap-[74px] md:mt-[59px]'>
+            <div className='flex flex-col items-center space-y-12 gap-4 mt-16 md:flex-row md:justify-center md:gap-[74px] md:mt-[59px]'>
                 <img src={Google} alt="Google" />
                 <img src={Air} alt="Airbnb" />
                 <img src={Cm} alt="Creative Market" />

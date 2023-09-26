@@ -7,18 +7,22 @@ import Price from '../components/Price'
 import Experience from '../components/Experience'
 import Slider from '../components/Slider'
 import FAQ from '../components/Faq'
+import Testi from '../components/Testi'
 
 const Homepage = () => {
     return (
         <div>
             <NavBar />
-            <Header />
+            <div className='bg-[#E8F0FD]'>
+                <Header />
+            </div>
             <AboutUs />
             <Content />
             <Price />
             <Experience />
             <Slider />
             <FAQ />
+            <Testi />
         </div>
     )
 }
