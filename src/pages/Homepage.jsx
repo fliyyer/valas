@@ -8,6 +8,8 @@ import Experience from '../components/Experience'
 import Slider from '../components/Slider'
 import FAQ from '../components/Faq'
 import Testi from '../components/Testi'
+import Notification from '../components/Notification'
+import Footer from '../components/Footer'
 
 const Homepage = () => {
     return (
@@ -18,11 +20,17 @@ const Homepage = () => {
             </div>
             <AboutUs />
             <Content />
+            <div className='bg-[#E8F0FD]'>
+                <Notification />
+            </div>
             <Price />
             <Experience />
             <Slider />
             <FAQ />
             <Testi />
+            <div className='bg-[#2E4865]'>
+                <Footer />
+            </div>
         </div>
     )
 }

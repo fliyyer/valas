@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import AOS from 'aos';
+import React, { useEffect, useState } from 'react';
 
 const FAQ = () => {
     const [faqs, setFaqs] = useState([
@@ -30,8 +31,12 @@ const FAQ = () => {
         setFaqs(updatedFaqs);
     };
 
+    useEffect(() => {
+        AOS.init()
+    })
+
     return (
-        <div className="container max-w-7xl px-2 md:px-0 mx-auto">
+        <div className="container max-w-7xl px-2 md:px-0 mx-auto" data-aos='fade-up' data-aos-duration='3000'>
             <h1 className="text-2xl font-bold text-[#004387] text-center my-[79px]">FREQUENTLY ASKED QUESTIONS</h1>
             {faqs.map((faq, index) => (
                 <div
@@ -51,4 +56,5 @@ const FAQ = () => {
     );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default FAQ;
