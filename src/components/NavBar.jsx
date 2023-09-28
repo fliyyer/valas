@@ -79,19 +79,19 @@ export default function NavBar() {
                     >
                         <ul className="items-center text-sm font-medium justify-center space-y-8 md:flex md:space-x-9 md:space-y-0">
                             <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('home')}>
-                                <Link>Home</Link>
+                                <Link>{t('home')}</Link>
                             </li>
                             <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('about')}>
-                                <Link>About Us</Link>
+                                <Link>{t('about')}</Link>
                             </li>
                             <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('services')}>
-                                <Link>Our Solution</Link>
+                                <Link>{t('our solution')}</Link>
                             </li>
                             <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('client')}>
-                                <Link>Client</Link>
+                                <Link>{t('client')}</Link>
                             </li>
                             <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('price')}>
-                                <Link>Price</Link>
+                                <Link>{t('price')}</Link>
                             </li>
                             <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('testi')}>
                                 <Link>{t('contact')}</Link>
@@ -106,10 +106,10 @@ export default function NavBar() {
                                         <BsChevronDown className="text-sm" />
                                     </div>
                                     {isOpen && (
-                                        <div className="lg:absolute right-0 mt-2 w-36 rounded-md shadow-lg text-black bg-white ring-1 ring-black ring-opacity-5">
+                                        <div className="lg:absolute -right-5 mt-4 w-20 rounded-sm shadow-lg text-black bg-white ring-1 ring-black ring-opacity-5">
                                             {languages.map(l => (
-                                                <div key={l.code} className="py-1 px-3 cursor-pointer hover:bg-gray-100" onClick={() => handleLanguageChange(l.code)}>
-                                                    <img src={l.icon} alt={l.label} className="h-5 w-5 inline-block mr-2" />
+                                                <div key={l.code} className="py-1 px-2 cursor-pointer hover:bg-gray-100" onClick={() => handleLanguageChange(l.code)}>
+                                                    <img src={l.icon} alt={l.label} className="h-5 w-5 border-2 border-[#0A4BDB] rounded-full inline-block mr-2" />
                                                     <span>{l.label}</span>
                                                 </div>
                                             ))}

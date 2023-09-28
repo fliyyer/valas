@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import CardPrice from './CardPrice';
-import Klien1 from '../assets/klien1.png';
-import Klien2 from '../assets/klien2.png';
-import Klien3 from '../assets/klien3.png';
-import Klien4 from '../assets/klien4.png';
-import Klien5 from '../assets/klien5.png';
+import CardPrice from '../../components/CardPrice';
+import Klien1 from '../../assets/klien1.png';
+import Klien2 from '../../assets/klien2.png';
+import Klien3 from '../../assets/klien3.png';
+import Klien4 from '../../assets/klien4.png';
+import Klien5 from '../../assets/klien5.png';
 import AOS from 'aos'
 const Price = () => {
     useEffect(() => {

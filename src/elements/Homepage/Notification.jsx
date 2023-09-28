@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Web from '../assets/web portal.png'
+import Web from '../../assets/web portal.png'
 import AOS from 'aos'
 
 const Notification = () => {

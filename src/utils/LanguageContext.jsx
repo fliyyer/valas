@@ -6,13 +6,13 @@ const languages = [
   {
     code: 'en',
     desk: 'EN',
-    label: 'English',
+    label: 'EN',
     icon: 'https://cdn.countryflags.com/thumbs/united-states-of-america/flag-square-250.png',
   },
   {
     code: 'id',
     desk: 'ID',
-    label: 'Indonesia',
+    label: 'ID',
     icon: 'https://cdn.countryflags.com/thumbs/indonesia/flag-square-250.png',
   },
 ];

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import expe from '../assets/expe.png'
+import expe from '../../assets/expe.png'
 import Aos from 'aos'
 
 const Experience = () => {

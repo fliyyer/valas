@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-import CardTesti from './CardTesti'
-import Testi1 from '../assets/testi1.png'
-import Testi2 from '../assets/testi2.png'
-import Testi3 from '../assets/testi3.png'
-import Testi4 from '../assets/testi4.png'
-import Btn from '../assets/btn ps.png'
+import CardTesti from '../../components/CardTesti'
+import Testi1 from '../../assets/testi1.png'
+import Testi2 from '../../assets/testi2.png'
+import Testi3 from '../../assets/testi3.png'
+import Testi4 from '../../assets/testi4.png'
+import Btn from '../../assets/btn ps.png'
 import AOS from 'aos'
 
 const Testi = () => {

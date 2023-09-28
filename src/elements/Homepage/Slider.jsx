@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Hp from '../assets/mockup ip.png';
+import Hp from '../../assets/mockup ip.png';
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
 import AOS from 'aos'
 

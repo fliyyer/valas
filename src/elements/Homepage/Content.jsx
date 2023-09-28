@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Mockup from '../assets/mockup ip.png'
-import Mockup2 from '../assets/header.png'
+import Mockup from '../../assets/mockup ip.png'
+import Mockup2 from '../../assets/header.png'
 import AOS from 'aos'
 
 const Content = () => {

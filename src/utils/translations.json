@@ -1,10 +1,18 @@
 {
     "en": {
-      "team": "Discover Our Professional Team!",
-      "contact": "Contact Us"
+      "about": "About Us",
+      "home": "Home",
+      "contact": "Contact Us",
+      "our solution": "Our Solution",
+      "client" : "Client",
+      "price": "Price"
     },
     "id": {
-      "team": "Temukan Tim Kami!",
-      "contact": "Hubungi Kami"
+      "about": "Tentang Kami",
+      "home": "Beranda",
+      "contact": "Hubungi Kami",
+      "our solution": "Solusi Kami",
+      "client" : "Klien",
+      "price": "Harga"
     }
   }

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import Btnps from '../assets/btn ps.png'
-import Mockup from '../assets/header.png'
+import Btnps from '../../assets/btn ps.png'
+import Mockup from '../../assets/header.png'
 import AOS from 'aos'
 const Header = () => {
     useEffect(() => {
