@@ -14,7 +14,7 @@ const Content = () => {
     },)
 
     return (
-        <div className='container mx-auto' data-aos='fade-up' data-aos-duration='1500'>
+        <div className='container mx-auto' data-aos='fade-up' data-aos-duration='1500' id='services'>
             <h1 className='text-[#004387] text-2xl text-center font-bold'>HOW TO TRANSACTION IN VALAST</h1>
             <div className='flex flex-col items-center gap-[144px] justify-center mt-8 md:flex-row md:justify-center'>
                 <div className='image-transition'>

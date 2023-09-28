@@ -8,8 +8,8 @@ const Header = () => {
     })
 
     return (
-        <><div className='container mx-auto '>
-            <div className='flex flex-col-reverse py-5 items-center justify-center md:flex-row' >
+        <><div className='container mx-auto' id='home'>
+            <div className='flex flex-col-reverse  py-32 items-center justify-center md:flex-row' >
                 <div className='w-full md:w-1/2 text-center md:text-left' data-aos="fade-right" data-aos-duration='1500'>
                     <h1 className='text-[24px] md:text-[40px] font-bold text-[#0A4BDB]'>
                         Lorem ipsum dolor <span className='text-[#14C3F2]'>sit amet</span>, consectetur adipiscing elit.

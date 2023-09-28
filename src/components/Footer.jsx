@@ -6,7 +6,7 @@ import { FaLocationDot } from 'react-icons/fa6'
 
 const Footer = () => {
     return (
-        <div className='py-6 md:py-[43px] px-4 md:px-[113px]'>
+        <div className='py-6 md:py-[43px] px-4 md:px-[113px] 2xl:md:px-0 2xl:max-w-7xl justify-center mx-auto'>
             <img src={Logo} alt="Logo" className="mb-4" />
             <div className='text-[#fff] flex flex-col md:flex-row md:justify-between'>
                 <div className='text-sm md:mt-[52px]'>

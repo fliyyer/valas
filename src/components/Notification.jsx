@@ -7,7 +7,7 @@ const Notification = () => {
         AOS.init()
     })
     return (
-        <div className='container mx-auto px-3 py-8 md:py-24 my-8 md:my-24'>
+        <div className='container mx-auto px-3 py-8 md:py-24 my-8 md:my-24' id='client'>
             <div className='flex flex-col sm:flex-row justify-center items-center md:px-32'>
                 <div className='w-full sm:w-1/2 md:w-1/2' data-aos='fade-right' data-aos-duration='2500'>
                     <div className='flex items-center gap-[15px]'>

@@ -1,16 +1,39 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Logo from '../assets/Logo.png';
 import { Link } from "react-router-dom";
+import { languages, LanguageContext } from '../utils/LanguageContext';
+import { BsChevronDown } from 'react-icons/bs'
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
+    const { t } = useContext(LanguageContext);
+    const [isOpen, setIsOpen] = useState(false);
+    const { language, setLanguage } = useContext(LanguageContext);
+
+    const handleLanguageChange = (code) => {
+        setLanguage(code);
+        setIsOpen(false);
+    };
+
+    const handleScrollTo = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            const navbarHeight = document.querySelector('nav').offsetHeight; // Menambahkan tinggi navbar
+            const topPosition = element.offsetTop - navbarHeight;
+            window.scrollTo({
+                top: topPosition,
+                behavior: "smooth",
+            });
+        }
+    };
+
 
     return (
-        <nav className="w-full bg-white shadow">
+        <nav className="w-full bg-white shadow fixed z-50">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <img src={Logo} alt="Logo Valas" />
+                        <Link to='/'><img src={Logo} alt="Logo Valas" /></Link>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -55,28 +78,45 @@ export default function NavBar() {
                             }`}
                     >
                         <ul className="items-center text-sm font-medium justify-center space-y-8 md:flex md:space-x-9 md:space-y-0">
-                            <li className="text-[#505050] hover:text-[#0A4BDB]">
+                            <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('home')}>
                                 <Link>Home</Link>
                             </li>
-                            <li className="text-[#505050] hover:text-[#0A4BDB]">
+                            <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('about')}>
                                 <Link>About Us</Link>
                             </li>
-                            <li className="text-[#505050] hover:text-[#0A4BDB]">
+                            <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('services')}>
                                 <Link>Our Solution</Link>
                             </li>
-                            <li className="text-[#505050] hover:text-[#0A4BDB]">
+                            <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('client')}>
                                 <Link>Client</Link>
                             </li>
-                            <li className="text-[#505050] hover:text-[#0A4BDB]">
+                            <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('price')}>
                                 <Link>Price</Link>
                             </li>
-                            <li className="text-[#505050] hover:text-[#0A4BDB]">
-                                <Link>Contact Us</Link>
+                            <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('testi')}>
+                                <Link>{t('contact')}</Link>
                             </li>
                             <div className="flex items-center space-x-5">
                                 <span className="border hidden md:inline-block border-l h-[24px] border-[#505050] "></span>
                                 <button className="px-[15px] py-2 rounded-[5px] text-base font-medium text-[#0A4BDB] border border-[#0A4BDB]">Login</button>
                                 <button className="px-[15px] py-2 rounded-[5px] text-base font-medium text-[#fff] border border-[#fff] bg-[#0A4BDB]">Request Demo</button>
+                                <div className="relative inline-block text-left">
+                                    <div className="language-button items-center flex gap-1 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+                                        <img src={languages.find(l => l.code === language).icon} alt="Language" className="h-6 rounded-full border-2 border-[#0A4BDB] w-6 inline-block" />
+                                        <BsChevronDown className="text-sm" />
+                                    </div>
+                                    {isOpen && (
+                                        <div className="lg:absolute right-0 mt-2 w-36 rounded-md shadow-lg text-black bg-white ring-1 ring-black ring-opacity-5">
+                                            {languages.map(l => (
+                                                <div key={l.code} className="py-1 px-3 cursor-pointer hover:bg-gray-100" onClick={() => handleLanguageChange(l.code)}>
+                                                    <img src={l.icon} alt={l.label} className="h-5 w-5 inline-block mr-2" />
+                                                    <span>{l.label}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
+
                             </div>
                         </ul>
                     </div>

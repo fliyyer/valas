@@ -11,7 +11,7 @@ const Price = () => {
         AOS.init()
     })
     return (
-        <><div className='mx-auto container px-4 md:px-0 pb-20' data-aos='fade-up' data-aos-duration='2000'>
+        <><div className='mx-auto container px-4 md:px-0 pb-20' data-aos='fade-up' data-aos-duration='2000' id='price'>
             <h1 className='text-center text-[#004387] text-2xl md:text-3xl font-bold'>PRICE</h1>
             <div className='flex flex-col md:flex-row justify-center md:justify-center mt-8 gap-[27px]'>
                 <CardPrice title='Pro' price='500K/Month' color='bg-[#19C3F4]' data-aos='fade-up' data-aos-duration='2000' />

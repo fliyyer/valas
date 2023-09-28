@@ -12,7 +12,7 @@ const Testi = () => {
         AOS.init()
     })
     return (
-        <div className='container py-[83px] px-2 md:max-w-7xl mx-auto' data-aos='fade-up' data-aos-duration='2500'>
+        <div className='container py-[83px] px-2 md:max-w-7xl mx-auto' data-aos='fade-up' data-aos-duration='2500' id='testi'>
             <div className='flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-14'>
                 <CardTesti Img={Testi1} Nama='Ary Hermawan' data-aos='fade-up' data-aos-duration='2500' />
                 <CardTesti Img={Testi2} Nama='Sri Rakhelna' data-aos='fade-up' data-aos-duration='2500' />

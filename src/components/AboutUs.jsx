@@ -16,7 +16,7 @@ const AboutUs = () => {
     })
 
     return (
-        <div className='my-16'>
+        <div className='my-16' id='about'>
             <h1 className='text-[#004387] text-2xl text-center font-bold ' data-aos='fade-up' data-aos-duration='1500'>READ MORE ABOUT US</h1>
             <div className='flex flex-col items-center space-y-12 md:space-y-0 gap-4 mt-16 md:flex-row md:justify-center md:gap-[74px] md:mt-[59px]' data-aos='fade-up' data-aos-duration='1500'>
                 <img src={Google} alt="Google" />
