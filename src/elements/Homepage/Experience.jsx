@@ -7,7 +7,7 @@ const Experience = () => {
         Aos.init()
     })
     return (
-        <div className='container max-w-7xl px-5 md:px-0 py-14 mx-auto'>
+        <div className='container max-w-5xl 2xl:max-w-7xl px-5 md:px-0 py-14 mx-auto'>
             <div className='flex flex-col md:flex-row justify-center items-center gap-8'>
                 <div className='w-full md:w-1/2' data-aos='fade-right' data-aos-duration='2500'>
                     <p className='text-[#008AFF] text-sm md:text-lg font-semibold uppercase'>Why Choose Bestkit?</p>

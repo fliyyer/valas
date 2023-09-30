@@ -36,7 +36,7 @@ const FAQ = () => {
     })
 
     return (
-        <div className="container max-w-7xl px-2 md:px-0 mx-auto" data-aos='fade-up' data-aos-duration='3000'>
+        <div className="container max-w-5xl 2xl:max-w-7xl px-2 md:px-0 mx-auto" data-aos='fade-up' data-aos-duration='3000'>
             <h1 className="text-2xl font-bold text-[#004387] text-center my-[79px]">FREQUENTLY ASKED QUESTIONS</h1>
             {faqs.map((faq, index) => (
                 <div
