@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Mockup from '../../assets/mockup ip.png'
-import Mockup2 from '../../assets/header.png'
+import Mockup3 from '../../assets/header.png'
+import Mockup4 from '../../assets/mockup4.png'
+import Mockup2 from '../../assets/mockup2.png'
+import Mockup1 from '../../assets/mockup1.png'
 import AOS from 'aos'
 
 const Content = () => {
@@ -19,13 +22,13 @@ const Content = () => {
             <div className='flex flex-col items-center gap-[144px] justify-center mt-8 md:flex-row md:justify-center'>
                 <div className='image-transition'>
                     {activeStep === 1 ? (
-                        <img src={Mockup} alt='Mockup 1' className={activeStep === 1 ? 'active' : ''} />
+                        <img src={Mockup1} alt='Mockup 1' className={activeStep === 1 ? 'active w-72' : ''} />
                     ) : activeStep === 2 ? (
-                        <img src={Mockup2} alt='Mockup 2' className={activeStep === 2 ? 'active' : ''} />
+                        <img src={Mockup2} alt='Mockup 2' className={activeStep === 2 ? 'active w-72' : ''} />
                     ) : activeStep === 3 ? (
-                        <img src={Mockup} alt='Mockup 3' className={activeStep === 3 ? 'active' : ''} />
+                        <img src={Mockup} alt='Mockup 3' className={activeStep === 3 ? 'active ' : ''} />
                     ) : (
-                        <img src={Mockup2} alt='Mockup 4' className={activeStep === 4 ? 'active' : ''} />
+                        <img src={Mockup4} alt='Mockup 4' className={activeStep === 4 ? 'active w-72' : ''} />
                     )}
                 </div>
                 <div className='space-y-4'>

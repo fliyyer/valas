@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import Logo from '../assets/Logo.png';
+import Logo from '../assets/logoh.png';
 import { Link } from "react-router-dom";
 import { languages, LanguageContext } from '../utils/LanguageContext';
 import { BsChevronDown } from 'react-icons/bs'
@@ -33,7 +33,7 @@ export default function NavBar() {
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <Link to='/'><img src={Logo} alt="Logo Valas" /></Link>
+                        <Link to='/'><img src={Logo} alt="Logo Valas" className="w-40" /></Link>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"

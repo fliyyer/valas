@@ -7,8 +7,8 @@ const Notification = () => {
         AOS.init()
     })
     return (
-        <div className='container mx-auto px-3 py-8 md:py-24 my-8 md:my-24' id='client'>
-            <div className='flex flex-col sm:flex-row justify-center items-center md:px-32'>
+        <div className='container mx-auto px-3 py-8 md:py-24 my-8 md:my-24 max-w-7xl' id='client'>
+            <div className='flex flex-col sm:flex-row justify-center items-center'>
                 <div className='w-full sm:w-1/2 md:w-1/2' data-aos='fade-right' data-aos-duration='2500'>
                     <div className='flex items-center gap-[15px]'>
                         <div className='bg-[#0360D9] w-[48px] h-[48px] flex justify-center p-[12px] rounded-full'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -20,7 +20,7 @@ const Notification = () => {
                 </div>
                 <img src={Web} className='' alt="" data-aos='fade-left' data-aos-duration='2500' />
             </div>
-            <div className='flex flex-col-reverse sm:flex-row px-3 justify-center items-center mt-8 sm:mt-32 md:px-32'>
+            <div className='flex flex-col-reverse sm:flex-row px-3 justify-center items-center mt-8 sm:mt-32'>
                 <img src={Web} className='' alt="" data-aos='fade-right' data-aos-duration='2500' />
                 <div className='w-full md:w-1/2' data-aos='fade-left' data-aos-duration='2500'>
                     <div className='flex items-center gap-[15px]'>
