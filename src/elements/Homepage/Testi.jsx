@@ -3,7 +3,7 @@ import CardTesti from '../../components/CardTesti'
 import Testi1 from '../../assets/testi1.png'
 import Testi2 from '../../assets/testi2.png'
 import Testi3 from '../../assets/testi3.png'
-import Testi4 from '../../assets/testi4.png'
+import Testi4 from '../../assets/mockup CTA.png'
 import Btn from '../../assets/btn ps.png'
 import AOS from 'aos'
 
@@ -18,7 +18,7 @@ const Testi = () => {
                 <CardTesti Img={Testi2} Nama='Sri Rakhelna' data-aos='fade-up' data-aos-duration='2500' />
                 <CardTesti Img={Testi3} Nama='Indah Puji Astuti' data-aos='fade-up' data-aos-duration='2500' />
             </div>
-            <div className='bg-bluess max-w-7xl mt-[91px] py-3 mx-auto flex flex-col-reverse md:flex-row rounded-[26px] px-4 md:px-20 items-center'>
+            <div className='bg-bluess max-w-7xl mt-[91px] pb-3 md:pb-0 pt-3 mx-auto flex flex-col-reverse md:flex-row rounded-[26px] px-4 md:px-20 items-center'>
                 <div className="md:w-1/2 md:ml-10">
                     <h1 className='text-2xl md:text-3xl lg:text-4xl font-bold text-center md:text-left text-white'>Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit.</h1>

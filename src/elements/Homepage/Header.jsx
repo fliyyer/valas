@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react'
-import Btnps from '../../assets/btn ps.png'
-import Mockup from '../../assets/header.png'
+import React, { useEffect, useContext } from 'react'
+import Gp from '../../assets/google-play.png'
+import App from '../../assets/apps-store.png'
+import Mockup from '../../assets/mockup jumbotron.png'
 import AOS from 'aos'
+import { LanguageContext } from '../../utils/LanguageContext'
 const Header = () => {
+    const { t } = useContext(LanguageContext);
     useEffect(() => {
         AOS.init()
     })
@@ -12,15 +15,18 @@ const Header = () => {
             <div className='flex flex-col-reverse  py-32 items-center justify-center md:flex-row' >
                 <div className='w-full md:w-1/2 text-center md:text-left' data-aos="fade-right" data-aos-duration='1500'>
                     <h1 className='text-[24px] md:text-[40px] font-bold text-[#0A4BDB]'>
-                        Lorem ipsum dolor <span className='text-[#14C3F2]'>sit amet</span>, consectetur adipiscing elit.
+                        {t('headerTitle')}
                     </h1>
                     <p className='text-base text-[#0A4BDB] leading-[24px] md:leading-[20px] md:w-[453px]'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        {t('headerDescription')}
                     </p>
-                    <img className='mt-6 md:mt-12 mx-auto md:mx-0' src={Btnps} alt="Ps" />
+                    <div className='flex md:gap-2 mt-9 md:mt-12'>
+                        <img src={Gp} className='w-44 mx-auto md:mx-0 cursor-pointer' alt="Google Play" />
+                        <img src={App} className='w-44 mx-auto md:mx-0 cursor-pointer' alt="Play Store" />
+                    </div>
                 </div>
-                <div className='mr-10 md:mr-0' data-aos="fade-left" data-aos-duration='1500'>
-                    <img src={Mockup} alt="Mockup" />
+                <div className='mr-10 md:mr-0 ' data-aos="fade-left" data-aos-duration='1500'>
+                    <img src={Mockup} alt="Mockup" className='w-[450px]' />
                 </div>
             </div>
         </div><div>

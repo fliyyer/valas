@@ -5,7 +5,9 @@
       "contact": "Contact Us",
       "our solution": "Our Solution",
       "client" : "Client",
-      "price": "Price"
+      "price": "Price",
+      "headerTitle" : "Exchange Foreign Currency More Practically in Just One Hand",
+      "headerDescription" : "Get the convenience of currency exchange for various needs more conveniently and comfortably!"
     },
     "id": {
       "about": "Tentang Kami",
@@ -13,6 +15,8 @@
       "contact": "Hubungi Kami",
       "our solution": "Solusi Kami",
       "client" : "Klien",
-      "price": "Harga"
+      "price": "Harga",
+      "headerTitle" : "Tukar Valuta Asing Lebih Praktis Hanya dalam Satu Genggaman",
+      "headerDescription" : "Dapatkan kemudahan transaksi tukar uang untuk berbagai kebutuhan lebih nyaman dan menyenangkan!"
     }
   }
