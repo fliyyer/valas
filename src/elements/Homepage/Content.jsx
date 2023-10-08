@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Mockup from '../../assets/mockup ip.png'
-import Mockup3 from '../../assets/header.png'
 import Mockup4 from '../../assets/mockup4.png'
 import Mockup2 from '../../assets/mockup2.png'
 import Mockup1 from '../../assets/mockup1.png'

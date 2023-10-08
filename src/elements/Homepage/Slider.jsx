@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Hp from '../../assets/mockup ip.png';
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-icons/bs';
 import AOS from 'aos'
+import { LanguageContext } from '../../utils/LanguageContext';
 
 const Slider = () => {
+    const { t } = useContext(LanguageContext);
     const images = [Hp, Hp, Hp, Hp, Hp]; // Ganti dengan gambar yang sesuai
     const [currentIndex, setCurrentIndex] = useState(0);
     const isMobile = window.innerWidth <= 768;
@@ -31,9 +33,9 @@ const Slider = () => {
                 <BsFillArrowRightCircleFill className='w-[35px] h-[35px] text-[#0A4BDB]' />
             </button>
         </div><div className='text-center pb-6 mt-6 px-3 space-y-3' data-aos='fade-up' data-aos-duration='3500'>
-                <h1 className='text-2xl font-bold text-[#505050]'>Visual Tour</h1>
-                <div className='text-2xl text-[#2E4DFF] font-bold'>consectetur</div>
-                <p className='text-sm text-[#505050] leading-5 mx-auto md:w-[450px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <h1 className='text-2xl font-bold text-[#505050]'>{t('Transaksi Aman, Cepat, dan Mudah')}</h1>
+                <div className='text-2xl text-[#2E4DFF] font-bold'>{t('dengan Valast Mobile Apps')}</div>
+                <p className='text-sm text-[#505050] leading-5 mx-auto md:w-[450px]'>{t('Valast memberikan kemudahan tukar uang dengan Mobile Apps, sehingga transaksi lebih aman dan praktis')}</p>
             </div></>
     );
 };

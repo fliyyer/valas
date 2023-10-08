@@ -18,7 +18,7 @@ const languages = [
 ];
 
 const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = React.useState('en');
+  const [language, setLanguage] = React.useState('id');
 
   const t = (text) => {
     return translations[language][text];

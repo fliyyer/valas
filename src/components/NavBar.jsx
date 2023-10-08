@@ -18,7 +18,7 @@ export default function NavBar() {
     const handleScrollTo = (id) => {
         const element = document.getElementById(id);
         if (element) {
-            const navbarHeight = document.querySelector('nav').offsetHeight; // Menambahkan tinggi navbar
+            const navbarHeight = document.querySelector('nav').offsetHeight;
             const topPosition = element.offsetTop - navbarHeight;
             window.scrollTo({
                 top: topPosition,
@@ -98,8 +98,8 @@ export default function NavBar() {
                             </li>
                             <div className="flex items-center space-x-5">
                                 <span className="border hidden md:inline-block border-l h-[24px] border-[#505050] "></span>
-                                <button className="px-[15px] py-2 rounded-[5px] text-base font-medium text-[#0A4BDB] border border-[#0A4BDB]">Login</button>
-                                <button className="px-[15px] py-2 rounded-[5px] text-base font-medium text-[#fff] border border-[#fff] bg-[#0A4BDB]">Request Demo</button>
+                                <button className="px-[15px] py-2 rounded-[5px] text-base font-medium text-[#0A4BDB] border border-[#0A4BDB]">{t('login')}</button>
+                                <button className="px-[15px] py-2 rounded-[5px] text-base font-medium text-[#fff] border border-[#fff] bg-[#0A4BDB]">{t('demo')}</button>
                                 <div className="relative inline-block text-left">
                                     <div className="language-button items-center flex gap-1 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                                         <img src={languages.find(l => l.code === language).icon} alt="Language" className="h-6 rounded-full border-2 border-[#0A4BDB] w-6 inline-block" />

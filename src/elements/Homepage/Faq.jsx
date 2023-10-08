@@ -1,27 +1,29 @@
 import AOS from 'aos';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
+import { LanguageContext } from '../../utils/LanguageContext';
 
 const FAQ = () => {
+    const { t } = useContext(LanguageContext);
     const [faqs, setFaqs] = useState([
         {
-            question: 'Why is sending money with Valast ceaper & faster than the conventional way?',
-            answer: 'Valast leverages cutting-edge technology and a streamlined process to make money transfers more cost-effective and efficient. By eliminating intermediaries and optimizing currency exchange rates, Valast can offer lower fees and quicker transaction times compared to traditional methods.',
+            question: t('Mengapa kirim uang dengan Valast bisa lebih cepat dan biaya lebih murah?'),
+            answer: t('desc faq1'),
         },
         {
-            question: 'What if my transaction fails?',
-            answer: 'If your transaction fails for any reason, you can contact Valasts customer support team for assistance. They will help you identify the issue and guide you through the necessary steps to resolve it.',
+            question: t('Bagaimana jika transaksi gagal?'),
+            answer: t('desc faq2'),
         },
         {
-            question: 'How will I know when my money has arrived?',
-            answer: 'Valast will provide you with real-time notifications and updates regarding the status of your transaction. You will receive a confirmation once your money has been successfully transferred to the recipient.',
+            question: t('Bagaimana cara mengetahui uang sudah terkirim ke penerima?'),
+            answer: t('desc faq3'),
         },
         {
-            question: 'What to do if I have questions or problems when creating a transaction?',
-            answer: 'If you encounter any issues or have questions while creating a transaction, you can reach out to Valas customer support team for prompt assistance. They are available 247 to help you with any concerns.',
+            question: t('Apa yang harus dilakukan ketika ada pertanyaan dan kendala saat transaksi?'),
+            answer: t('desc faq4'),
         },
         {
-            question: 'Cam I make payment using a business bank account?',
-            answer: 'Yes, Valast supports payments from both personal and business bank accounts. You can choose the type of account you want to use when creating a transaction.',
+            question: t('Apakah pembayaran bisa menggunakan rekening bisnis?'),
+            answer: t('desc faq5'),
         },
     ]);
 
@@ -37,7 +39,7 @@ const FAQ = () => {
 
     return (
         <div className="container max-w-5xl 2xl:max-w-7xl px-2 md:px-0 mx-auto" data-aos='fade-up' data-aos-duration='3000'>
-            <h1 className="text-2xl font-bold text-[#004387] text-center my-[79px]">FREQUENTLY ASKED QUESTIONS</h1>
+            <h1 className="text-2xl font-bold text-[#004387] text-center my-[79px]">{t('Punya Pertanyaan Seputar Valast?')}</h1>
             {faqs.map((faq, index) => (
                 <div
                     key={index}

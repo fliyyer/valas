@@ -15,7 +15,7 @@ const Header = () => {
             <div className='flex flex-col-reverse  py-32 items-center justify-center md:flex-row' >
                 <div className='w-full md:w-1/2 text-center md:text-left' data-aos="fade-right" data-aos-duration='1500'>
                     <h1 className='text-[24px] md:text-[40px] font-bold text-[#0A4BDB]'>
-                        {t('headerTitle')}
+                        {t('Tukar Uang Lebih')} <span className='text-[#14C3F2]'>{t('Praktis')},<br /> </span> {t('Hanya Dalam')} <span className='text-[#14C3F2]'>{t('Satu Genggaman')}</span>
                     </h1>
                     <p className='text-base text-[#0A4BDB] leading-[24px] md:leading-[20px] md:w-[453px]'>
                         {t('headerDescription')}
