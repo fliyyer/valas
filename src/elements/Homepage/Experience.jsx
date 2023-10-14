@@ -14,7 +14,7 @@ const Experience = () => {
             <div className='flex flex-col md:flex-row justify-center items-center gap-8'>
                 <div className='w-full md:w-1/2' data-aos='fade-right' data-aos-duration='2500'>
                     <p className='text-[#008AFF] text-sm md:text-lg font-semibold uppercase'>{t('MENGAPA HARUS TRANSAKSI MENGGUNAKAN VALAST?')}</p>
-                    <h1 className='text-[40px] font-semibold leading-[54px] mb-[58px]'>{t('Kami Memberikan Pengalaman Liburan Lebih Nyaman')}</h1>
+                    <h1 className='text-[36px] font-semibold leading-[54px] mb-[58px]'>{t('Kami Memberikan Pengalaman Liburan Lebih Nyaman')}</h1>
                     <div className='font-poppins flex gap-[41px]'>
                         <div className=''>
                             <div className='w-[45px] flex justify-center items-center text-2xl text-[#fff] font-semibold h-[45px] rounded-full bg-[#008AFF]'>1</div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import CardPrice from '../../components/CardPrice';
 import Klien1 from '../../assets/klien1.png';
 import Klien2 from '../../assets/klien2.png';
@@ -6,13 +6,15 @@ import Klien3 from '../../assets/klien3.png';
 import Klien4 from '../../assets/klien4.png';
 import Klien5 from '../../assets/klien5.png';
 import AOS from 'aos'
+import { LanguageContext } from '../../utils/LanguageContext'
 const Price = () => {
+    const { t } = useContext(LanguageContext)
     useEffect(() => {
         AOS.init()
     })
     return (
         <><div className='mx-auto container px-4 md:px-0 pb-20' data-aos='fade-up' data-aos-duration='2000' id='price'>
-            <h1 className='text-center text-[#004387] text-2xl md:text-3xl font-bold'>PRICE</h1>
+            <h1 className='text-center text-[#004387] text-2xl md:text-3xl font-bold uppercase'>{t('Harga')}</h1>
             <div className='flex flex-col md:flex-row justify-center md:justify-center mt-8 gap-[27px]'>
                 <CardPrice title='Pro' price='500K/Month' color='bg-[#19C3F4]' data-aos='fade-up' data-aos-duration='2000' />
                 <CardPrice title='Business' price='1000K/Month' color='bg-[#0A4BDB]' data-aos='fade-up' data-aos-duration='2000' />

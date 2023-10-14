@@ -43,7 +43,7 @@ const Header = () => {
                     <div className='h-[2px] w-[79px] bg-[#Fff]'></div>
                     <div className='text-[#fff] text-center items-center '>
                         <h1 className='text-[32px] md:text-[48px] font-bold'>100+</h1>
-                        <p>Money Changers</p>
+                        <p>Transaction</p>
                     </div>
                 </div>
             </div></>

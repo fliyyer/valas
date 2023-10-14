@@ -30,7 +30,7 @@ const AboutUs = () => {
             <div className='flex flex-wrap justify-center items-center gap-14 mt-32' data-aos='fade-up' data-aos-duration='1500'>
                 <CardAbout img={Card1} title={t('titleBi')} desc={t('titleBiDescription')} />
                 <CardAbout img={Card2} title={t('titleSi')} desc={t('titleSiDescription')} />
-                <CardAbout img={Card3} title={t('titlePse')} desc='Our calendar lets you know what is happening with customer and projects so you' />
+                <CardAbout img={Card3} title={t('titlePse')} desc={t('titlePseDescription')} />
             </div>
         </div>
     )

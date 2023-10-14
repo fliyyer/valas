@@ -32,7 +32,7 @@ const Notification = () => {
                         </svg></div>
                         <h1 className='font-poppins text-2xl md:text-[28px] font-extrabold'>{t('User Friendly Mobile Apps')}</h1>
                     </div>
-                    <p className='font-poppins text-[#000] text-[20px] mt-4 text-center md:text-justify sm:mt-8 text-lg sm:text-base leading-[24px] sm:leading-[28px] font-medium opacity-50'>{t('Dashboard desc')}</p>
+                    <p className='font-poppins text-[#000] text-[20px] mt-4 text-center md:text-justify sm:mt-8 text-lg sm:text-base leading-[24px] sm:leading-[28px] font-medium opacity-50'>{t('User Desc')}</p>
                 </div>
             </div>
         </div>

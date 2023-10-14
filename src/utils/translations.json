@@ -13,9 +13,10 @@
       "titlePse" : "Certified by PSE",
       "titleBiDescription" : "Valast has been registered and certified by Bank Indonesia. License No. 11/11/MDN/1",
       "titleSiDescription" : "Data security and confidentiality are guaranteed with ISO certification",
+      "titlePseDescription" : "Valast has been certified as an electronic payment system that is safe for transactions",
       "login" : "Login",
       "demo" : "Request Demo",
-      "Tukar Uang Lebih" : "Exchange Money More",
+      "Tukar Uang Lebih" : "Exchange Currency More",
       "Praktis" : "Practical",
       "Hanya Dalam" : "Just In",
       "Satu Genggaman" : "One Hand",
@@ -50,7 +51,13 @@
       "testi3" : "This is the best application for traveling. Money exchange is easier, safe, and convenient!",
       "Tukar Uang Lebih Praktis Hanya dalam Satu Genggaman" : "More Practical Money Exchange in Just One Hand",
       "Dapatkan kemudahan transaksi tukar uang untuk liburan lebih nyaman dan menyenangkan!" : "Get the convenience of currency exchange for various needs more conveniently and comfortably!",
-      "Download Valast sekarang!" : "Download Valast now!"
+      "Download Valast sekarang!" : "Download Valast now!",
+      "Harga" : "Price",
+      "Buat akun Valast" : "Create an account",
+      "Masukkan nominal transaksi dan pilih Money Changer" : "Enter the nominal of the transaction and choose Money Changer",
+      "Pilih ambil di Money Changer atau delivery" : "Choose to pick up at Money Changer or delivery",
+      "Lakukan pembayaran, dan transaksi selesai" : "Make payment and transaction completed",
+      "INTIP CARA MUDAH TRANSAKSI VALAST" : "PEEK AT HOW EASY VALAST TRANSACTIONS CAN BE"
     },
     "id": {
       "about": "Tentang Kami",
@@ -66,9 +73,10 @@
       "titlePse" : "Terdafatar PSE Kominfo",
       "titleBiDescription" : "Valast telah terdaftar dan diawasi oleh Bank Indonesia. No. Lisensi 11/11/MDN/1",
       "titleSiDescription" : "Keamanan dan kerahasiaan data terjamin dengan sertifikasi ISO",
+      "titlePseDescription" : "Valast telah terdaftar sebagai sistem elektronik yang aman untuk bertransaksi",
       "login" : "Masuk",
       "demo" : "Demo Gratis",
-      "Tukar Uang Lebih" : "Tukar Uang Lebih",
+      "Tukar Uang Lebih" : "Tukar Valuta Asing Lebih",
       "Praktis" : "Praktis",
       "Hanya Dalam" : "Hanya Dalam",
       "Satu Genggaman" : "Satu Genggaman",
@@ -103,6 +111,12 @@
       "testi3" : "Ini nih aplikasi yang dibutuhin sama traveler. Transaksi tukar uang jadi lebih mudah, aman, dan pelayanannya terbaik!",
       "Tukar Uang Lebih Praktis Hanya dalam Satu Genggaman" : "Tukar Uang Lebih Praktis Hanya dalam Satu Genggaman",
       "Dapatkan kemudahan transaksi tukar uang untuk liburan lebih nyaman dan menyenangkan!" : "Dapatkan kemudahan transaksi tukar uang untuk liburan lebih nyaman dan menyenangkan!",
-      "Download Valast sekarang!" : "Download Valast sekarang!"
+      "Download Valast sekarang!" : "Download Valast sekarang!",
+      "Harga" : "Harga",
+      "Buat akun Valast" : "Buat akun Valast",
+      "Masukkan nominal transaksi dan pilih Money Changer" : "Masukkan nominal transaksi dan pilih Money Changer",
+      "Pilih ambil di Money Changer atau delivery" : "Pilih ambil di Money Changer atau delivery",
+      "Lakukan pembayaran, dan transaksi selesai" : "Lakukan pembayaran, dan transaksi selesai",
+      "INTIP CARA MUDAH TRANSAKSI VALAST" : "INTIP CARA MUDAH TRANSAKSI VALAST"
     }
   }
