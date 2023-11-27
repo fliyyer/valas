@@ -77,7 +77,7 @@ export default function NavBar() {
                         className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                             }`}
                     >
-                        <ul className="items-center text-sm font-medium justify-center space-y-8 md:flex md:space-x-9 md:space-y-0">
+                        <ul className="items-center uppercase text-sm font-medium justify-center space-y-8 md:flex md:space-x-9 md:space-y-0">
                             <li className="text-[#505050] hover:text-[#0A4BDB]" onClick={() => handleScrollTo('home')}>
                                 <Link>{t('home')}</Link>
                             </li>
@@ -98,8 +98,8 @@ export default function NavBar() {
                             </li>
                             <div className="flex items-center space-x-5">
                                 <span className="border hidden md:inline-block border-l h-[24px] border-[#505050] "></span>
-                                <button className="px-[15px] py-2 rounded-[5px] text-base font-medium text-[#0A4BDB] border border-[#0A4BDB]">{t('login')}</button>
-                                <button className="px-[15px] py-2 rounded-[5px] text-base font-medium text-[#fff] border border-[#fff] bg-[#0A4BDB]">{t('demo')}</button>
+                                <button className="px-[15px] py-2 rounded-[5px] uppercase text-base font-medium text-[#0A4BDB] border border-[#0A4BDB]">{t('login')}</button>
+                                <button className="px-[15px] py-2 rounded-[5px] uppercase text-base font-medium text-[#fff] border border-[#fff] bg-[#0A4BDB]">{t('demo')}</button>
                                 <div className="relative inline-block text-left">
                                     <div className="language-button items-center flex gap-1 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                                         <img src={languages.find(l => l.code === language).icon} alt="Language" className="h-6 rounded-full border-2 border-[#0A4BDB] w-6 inline-block" />

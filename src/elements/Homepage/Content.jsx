@@ -40,6 +40,7 @@ const Content = () => {
                         <h1 className='text-2xl text-[#0A4BDB] font-bold'>1.</h1>
                         <div>
                             <p className={`text-base md:text-lg font-bold ${activeStep === 1 ? 'text-[#000]' : 'text-[#505050]'}`}>{t('Buat akun Valast')}</p>
+                            <p className='text-[#505050]'>Isi data diri dengan lengkap dan verifikasi akun</p>
                         </div>
                     </div>
                     <div
@@ -48,21 +49,24 @@ const Content = () => {
                     >
                         <h1 className='text-2xl text-[#0A4BDB] font-bold'>2.</h1>
                         <div>
-                            <p className={`text-base md:text-lg font-bold ${activeStep === 2 ? 'text-[#000] text-[20px]' : 'text-[#505050]'}`}>{t('Masukkan nominal transaksi dan pilih Money Changer')}</p>
+                            <p className={`text-base md:text-lg font-bold ${activeStep === 2 ? 'text-[#000] text-[20px]' : 'text-[#505050]'}`}>Isi data Transasksi</p>
+                            <p className='text-[#505050]'>{t('Masukkan nominal transaksi dan pilih Money Changer')}</p>
                         </div>
                     </div>
                     <div className={`flex border-2 cursor-pointer w-[350px] mx-auto  md:w-[570px] border-[#0360D9] rounded-[15px] p-7 gap-4 ${activeStep === 2 ? 'border-[#0A4BDB]' : ''}`}
                         onClick={() => handleStepClick(3)}>
                         <h1 className='text-2xl text-[#0A4BDB] font-bold'>3.</h1>
                         <div>
-                            <p className={`text-base md:text-lg font-bold ${activeStep === 3 ? 'text-[#000] text-[20px]' : 'text-[#505050]'}`}>{t('Pilih ambil di Money Changer atau delivery')}</p>
+                            <p className={`text-base md:text-lg font-bold ${activeStep === 3 ? 'text-[#000] text-[20px]' : 'text-[#505050]'}`}>Pilih Metode Transaksi</p>
+                            <p className='text-[#505050]'>Transfer atau datang langsung ke outlet</p>
                         </div>
                     </div>
                     <div className={`flex border-2 cursor-pointer w-[350px] mx-auto  md:w-[570px] border-[#0360D9] rounded-[15px] p-7 gap-4 ${activeStep === 2 ? 'border-[#0A4BDB]' : ''}`}
                         onClick={() => handleStepClick(4)}>
                         <h1 className='text-2xl text-[#0A4BDB] font-bold'>4.</h1>
                         <div>
-                            <p className={`text-base md:text-lg font-bold ${activeStep === 4 ? 'text-[#000] text-[20px]' : 'text-[#505050]'}`}>{t('Lakukan pembayaran, dan transaksi selesai')}</p>
+                            <p className={`text-base md:text-lg font-bold ${activeStep === 4 ? 'text-[#000] text-[20px]' : 'text-[#505050]'}`}>Lakukan Pembayaran</p>
+                            <p className='text-[#505050]'>Transasksi selesai dan uang akan dikirim sesuai metode yang dipilih</p>
                         </div>
                     </div>
                 </div>
