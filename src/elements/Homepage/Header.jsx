@@ -52,22 +52,22 @@ const Header = () => {
       </div>
       <div>
         <div
-          className="flex flex-col md:flex-row justify-center py-3 gap-4 bg-[#0360D9] items-center"
+          className="flex flex-col md:flex-row space-x-10 justify-center py-3 gap-4 bg-[#0360D9] items-center"
           data-aos="fade-up"
           data-aos-duration="1000">
           <div className="text-[#fff] text-center items-center ">
             <h1 className="text-[32px] md:text-[48px] font-bold">24/7</h1>
-            <p>Online Support</p>
+            <p>{t('Online Support')}</p>
           </div>
-          <div className="h-[2px] w-[79px] bg-[#Fff]"></div>
+          <div className="h-[75px] w-[2px] border-l-2 bg-[#Fff]"></div>
           <div className="text-[#fff] text-center items-center ">
             <h1 className="text-[32px] md:text-[48px] font-bold">100+</h1>
-            <p>Money Changers</p>
+            <p>{t('Money Changers')}</p>
           </div>
-          <div className="h-[2px] w-[79px] bg-[#Fff]"></div>
+          <div className="h-[75px] w-[2px] border-l-2 bg-[#Fff]"></div>
           <div className="text-[#fff] text-center items-center ">
-            <h1 className="text-[32px] md:text-[48px] font-bold">100+</h1>
-            <p>Transaction</p>
+            <h1 className="text-[32px] md:text-[48px] font-bold">1M+</h1>
+            <p>{t('Transaction')}</p>
           </div>
         </div>
       </div>

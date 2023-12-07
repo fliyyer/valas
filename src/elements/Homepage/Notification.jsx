@@ -44,12 +44,12 @@ const Notification = () => {
                 </defs>
                 </svg>
             </div>
-            <h1 className="font-poppins text-2xl md:text-[28px] font-extrabold">
+            <h1 className="font-poppins text-2xl font-bold">
             Valast for business
             </h1>
           </div>
           <p className="font-poppins text-[#000] text-[20px] text-center md:text-justify mt-4 sm:mt-8 text-lg sm:text-base leading-[24px] sm:leading-[28px] font-medium opacity-50">
-          Transaksi penukaran dan pengiriman uang dapat dilihat lebih lengkap melalui fitur tambahan yang dirancang untuk Admin
+          {t("Transaksi penukaran dan pengiriman uang dapat dilihat lebih lengkap melalui fitur tambahan yang dirancang untuk Admin")}
           </p>
         </div>
         <img
@@ -81,12 +81,12 @@ const Notification = () => {
   <path d="M15.6943 14.3282C15.6859 14.468 15.6918 14.6104 15.6659 14.7467C15.6174 15.0055 15.452 15.1357 15.2006 15.1288C14.9625 15.1227 14.7971 14.9898 14.7696 14.745C14.7412 14.4897 14.7437 14.2274 14.7579 13.9704C14.7729 13.6934 14.9408 13.5406 15.2023 13.5189C15.4487 13.498 15.6475 13.6917 15.6776 13.9721C15.6901 14.0894 15.6801 14.2092 15.6801 14.3282C15.6842 14.3282 15.6892 14.3282 15.6943 14.3282Z" fill="white"/>
 </svg>
             </div>
-            <h1 className="font-poppins text-2xl md:text-[28px] font-extrabold">
-            Keunggulan Dashboard Valast
+            <h1 className="font-poppins text-2xl font-bold">
+            {t('Keunggulan Dashboard Valast')}
             </h1>
           </div>
           <p className="font-poppins text-[#000] text-[20px] mt-4 text-center md:text-justify sm:mt-8 text-lg sm:text-base leading-[24px] sm:leading-[28px] font-medium opacity-50">
-          Valast memberikan pengalaman bertransaksi lebih menyenangkan dengan Mobile Apps yang user friendly
+          {t('Valast memberikan pengalaman bertransaksi lebih menyenangkan dengan Mobile Apps yang user friendly')}
           </p>
         </div>
       </div>

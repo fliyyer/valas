@@ -62,14 +62,14 @@ const Footer = () => {
                         <h1 className="text-lg font-semibold mb-[18px]">Help</h1>
                         <ul className="space-y-[10px] text-sm">
                             <li className="font-semibold">Contact us:</li>
-                            <li className="flex items-center leading-5 gap-[13.5px]">
+                            <li target="_blank" to="https://wa.me/088293716057" className="flex cursor-pointer items-center leading-5 gap-[13.5px]">
                                 <BsWhatsapp className="text-sm" />
-                                +62 854 - 323 - 4421
+                                0882-9371-6057
                             </li>
-                            <li className="flex items-center leading-5 gap-[13.5px]">
+                            <a target="_blank" href="mailto:sales@valast.id" className="flex items-center leading-5 gap-[13.5px]" rel="noreferrer">
                                 <BsTelephone className="text-sm" />
-                                cs@valast.com
-                            </li>
+                                Sales@valast.id
+                            </a>
                             <li className="font-semibold">Operational hours:</li>
                             <li className="flex items-center leading-5 gap-[13.5px]">
                                 Mon-Sun: 09.00 - 17.00 (GMT+7)
@@ -77,7 +77,7 @@ const Footer = () => {
                             <li className="font-semibold">Address:</li>
                             <li className="flex items-center leading-5 gap-[13.5px]">
                                 <FaLocationDot className="text-sm" />
-                                Jl. Asia 23/23, Medan, Indonesia
+                                Infiniti Office, <br /> Bellezza BSA Lantai 1 Unit 106, Jalan Letjen Soepeno
                             </li>
                         </ul>
                     </div>
